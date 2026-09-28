@@ -71,17 +71,17 @@ void insert_last_unique(int arr[], int &n, int x) {
 
     // YOUR CODES HERE
     //-----------------------
-bool found = false;
+    bool ada =false;
 
-    for(int i = 0; i < n; i++) {
-        if(arr[i] == x) {
-            found = true;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) {
+             ada =true;
         }
     }
 
-    if(found == false) {
+    if (ada==false) {
         arr[n] = x;
-        n++;
+        ++n;
     }
 
     //-----------------------
@@ -198,9 +198,7 @@ string group_and_average(int arr[], int n) {
 
     return hasil;
 
-
     //-----------------------
-    return "";
 }
 
 
@@ -227,16 +225,15 @@ void view_data_1(int arr[], int n) {
     */
 
     // YOUR CODES HERE
-     void view_data_1(int arr[], int n) {
-    for(int i = 0; i < n; i++) {
-        cout << arr[i];
-
-        if(i < n - 1) {
-            cout << ", ";
+    //-----------------------
+    for(int i=0; i<n; i++) {
+        cout<<arr[i];
+        if (i < n - 1) {
+                cout << ", ";
         }
     }
-
-    cout << endl;
+    cout<<endl;
+    //-----------------------
 }
 
 
