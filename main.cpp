@@ -228,7 +228,12 @@ void view_data_1(int arr[], int n) {
     */
 
     // YOUR CODES HERE
-    
+     for(int i=0; i<n; i++) {
+        cout<<arr[i]<<" ";
+        cout<<arr[i];
+        if (i < n - 1) {
+                cout << ", ";
+        }
     //-----------------------
     for(int i=0; i<n; i++) {
         cout<<arr[i]<<" ";
